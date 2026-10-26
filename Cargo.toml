@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = ["zuchu"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+# Release profile lives at the workspace root (Cargo warns otherwise)
+[profile.release]
+lto = true
+strip = true

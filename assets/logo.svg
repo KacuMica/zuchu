@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Zuchu logo: a terminal prompt slash — solid, sharp, custom -->
+  <rect width="512" height="512" rx="80" fill="#0b0b0e"/>
+  <defs>
+    <linearGradient id="ze" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e8e8ee"/>
+    </linearGradient>
+  </defs>
+  <!-- the slash: one diagonal, cut by a horizontal terminal bar -->
+  <g stroke="url(#ze)" stroke-width="30" stroke-linecap="round" fill="none">
+    <path d="M 62 62 L 236 236"/>
+    <path d="M 276 276 L 450 450"/>
+  </g>
+</svg>

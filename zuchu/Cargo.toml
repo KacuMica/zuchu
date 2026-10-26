@@ -1,0 +1,20 @@
+[package]
+name = "zuchu"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Zuchu terminal для kacuOS: PTY + VT-парсер + Lua-конфіг + OpenGL-рендер"
+
+[dependencies]
+# PTY: cross-platform interface (Linux/WSL is the primary target)
+portable-pty = "0.9"
+# Raw-mode stdin for headless tests
+libc = "0.2"
+# VT/xterm parser (the same crate used by Alacritty)
+vte = "0.13"
+# Lua config (sandbox approach like kacuctl)
+mlua = { version = "0.10", features = ["lua54", "vendored"] }
+# GUI: winit + OpenGL (glow)
+winit = "0.30"
+glow = "0.16"
+raw-window-handle = "0.6"
